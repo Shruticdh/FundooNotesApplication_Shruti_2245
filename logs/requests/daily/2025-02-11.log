@@ -1,0 +1,26 @@
+info: ::1 - - [11/Feb/2025:04:34:34 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:34:43 +0000] "GET /api/v1/users/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:34:45 +0000] "GET /api/v1/users/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:35:19 +0000] "GET /api/v1/users/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:36:48 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:37:06 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:37:09 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:37:09 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:38:16 +0000] "POST /api/v1/users HTTP/1.1" 500 55 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:39:12 +0000] "POST /api/v1/users HTTP/1.1" 500 73 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:45:29 +0000] "POST /api/v1/users HTTP/1.1" 201 82 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:45:45 +0000] "POST /api/v1/users HTTP/1.1" 201 249 "-" "PostmanRuntime/7.43.0"
+
+info: ::1 - - [11/Feb/2025:04:51:50 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.43.0"
+
