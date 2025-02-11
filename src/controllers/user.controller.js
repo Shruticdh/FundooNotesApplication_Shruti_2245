@@ -11,6 +11,10 @@ export const registerUser = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+      code: HttpStatus.INTERNAL_SERVER_ERROR,
+      message: 'New User Created Successfully'
+    });
   }
 };
 
@@ -24,5 +28,26 @@ export const getAllUsers = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+      code: HttpStatus.INTERNAL_SERVER_ERROR,
+      message: 'Error fetching user'
+    });
+  }
+};
+
+export const loginUsers = async (req, res) => {
+  try {
+    let data = await UserService.loginUser(req.body);
+    res.status(HttpStatus.OK).json({
+      code: HttpStatus.OK,
+      data: data,
+      message: 'All user fetched'
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: HttpStatus.BAD_REQUEST,
+      message: 'Error in login'
+    });
   }
 };
