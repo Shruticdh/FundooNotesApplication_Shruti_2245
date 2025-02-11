@@ -155,3 +155,5 @@ info: ::1 - - [11/Feb/2025:09:27:11 +0000] "POST /api/v1/users/login HTTP/1.1" 2
 
 info: ::1 - - [11/Feb/2025:09:27:33 +0000] "POST /api/v1/users/login HTTP/1.1" 200 541 "-" "PostmanRuntime/7.43.0"
 
+info: ::1 - - [11/Feb/2025:09:28:33 +0000] "POST /api/v1/users/login HTTP/1.1" 200 541 "-" "PostmanRuntime/7.43.0"
+
