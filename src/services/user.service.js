@@ -1,5 +1,6 @@
 import User from '../models/user.model';
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
 export const newUser = async (body) => {
   try {
@@ -29,7 +30,12 @@ export const loginUser = async (body) => {
     if (!isPassword) {
       return 'Invalid password';
     }
-    return { message: 'login successful', user };
+
+    const token = jwt.sign(
+      { userid: user._id, email: user.email },
+      process.env.JWT_SECRET
+    );
+    return { message: 'login successful', token, user };
   } catch (error) {
     return { error: error.message };
   }
