@@ -11,8 +11,10 @@ export const userAuth = async (req, res, next) => {
       };
     newToken = newToken.split(' ')[1];
 
-    const { user } = await jwt.verify(newToken, process.env.JWT_SECRET);
-    res.user = user;
+    const user = await jwt.verify(newToken, process.env.JWT_SECRET);
+    console.log('=========>>>>>>>>', user);
+    req.body.userId = user.userid;
+    // res.user = user;
     // res.token = newToken;
     next();
   } catch (error) {
