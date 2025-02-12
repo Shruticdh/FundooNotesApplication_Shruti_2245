@@ -217,3 +217,290 @@ ValidationError: Note validation failed: userId: Path `userId` is required.
     at D:\BL_Backend\fundo-project\node_modules\mongoose\lib\document.js:2580:17
     at D:\BL_Backend\fundo-project\node_modules\mongoose\lib\schematype.js:1273:9
     at processTicksAndRejections (node:internal/process/task_queues:77:11) {"date":"Tue Feb 11 2025 15:22:34 GMT+0530 (India Standard Time)","error":{"_message":"Note validation failed","errors":{"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"message":"Note validation failed: userId: Path `userId` is required.","name":"ValidationError"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":7266.25},"process":{"argv":["node","D:\\BL_Backend\\fundo-project\\src\\index.js"],"cwd":"D:\\BL_Backend\\fundo-project","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19866307,"external":21417431,"heapTotal":97202176,"heapUsed":62107176,"rss":139591680},"pid":19856,"uid":null,"version":"v18.17.0"},"stack":"ValidationError: Note validation failed: userId: Path `userId` is required.\n    at model.Document.invalidate (D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\document.js:2788:32)\n    at D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\document.js:2580:17\n    at D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\schematype.js:1273:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-02-11T09:52:34.594Z","trace":[{"column":32,"file":"D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\document.js","function":"model.Document.invalidate","line":2788,"method":"invalidate","native":false},{"column":17,"file":"D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\document.js","function":null,"line":2580,"method":null,"native":false},{"column":9,"file":"D:\\BL_Backend\\fundo-project\\node_modules\\mongoose\\lib\\schematype.js","function":null,"line":1273,"method":null,"native":false},{"column":11,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":77,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '._id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/._id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:21.655Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '_id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:39.465Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:48.702Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: ':_id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:57:33.503Z"}
+error: 
+    status - 500 
+    message - ReferenceError: _userId is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\services\/Note.service.js:18:48)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at Object.apply (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:14:12)
+    at Object.updateNote (D:\BL_Backend\fundo-project\src\services\/Note.service.js:17:24)
+    at _callee2$ (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:18:36)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:14:12)
+    at updateNote (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:16:24)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\BL_Backend\fundo-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\BL_Backend\fundo-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at D:\BL_Backend\fundo-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:238:16)
+    at done (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:489:12) 
+    url - /api/v1/notes/:_userId 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:58:57.061Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value ":_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:04:40.469Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value ":_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:06:01.762Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:06:42.200Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:09.184Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:43.047Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:56.448Z"}
+error: 
+    status - 500 
+    message - ReferenceError: isTrash is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\services\/Note.service.js:18:15)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:15:18.634Z"}
+error: 
+    status - 500 
+    message - ReferenceError: HttpStatus is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:19:16)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:18:27.875Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:32.283Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:37.978Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:58.633Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:24:20.518Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:29:34.596Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:30:44.021Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:35:02.500Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:37:49.955Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:39:16.036Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:45:59.356Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:48:35.723Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/notes/67ab1e0bc9177107a4fc9452 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2025-02-12T04:26:18.049Z"}

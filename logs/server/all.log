@@ -626,3 +626,414 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-11T0
 info: Connected to the database. {"timestamp":"2025-02-11T09:57:26.151Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-11T09:58:11.805Z"}
 info: Connected to the database. {"timestamp":"2025-02-11T09:58:11.827Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:55:30.189Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:55:30.209Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '._id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/._id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:21.655Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '_id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:39.465Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:56:48.702Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: ':_id' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:57:33.503Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:15.117Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:15.139Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:17.048Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:17.067Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:34.743Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:34.761Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:37.295Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:37.317Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:45.999Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:46.024Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T02:58:48.237Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T02:58:48.255Z"}
+error: 
+    status - 500 
+    message - ReferenceError: _userId is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\services\/Note.service.js:18:48)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at Object.apply (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:14:12)
+    at Object.updateNote (D:\BL_Backend\fundo-project\src\services\/Note.service.js:17:24)
+    at _callee2$ (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:18:36)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:14:12)
+    at updateNote (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:16:24)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\BL_Backend\fundo-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:284:15
+    at param (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\BL_Backend\fundo-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\BL_Backend\fundo-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:328:13)
+    at D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\BL_Backend\fundo-project\node_modules\express\lib\router\index.js:280:10)
+    at D:\BL_Backend\fundo-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:238:16)
+    at done (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\BL_Backend\fundo-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:489:12) 
+    url - /api/v1/notes/:_userId 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T02:58:57.061Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:03:39.764Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:03:39.780Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:03:56.906Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:03:56.922Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:04:02.706Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:04:02.724Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:04:22.435Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:04:22.462Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value ":_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:04:40.469Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:05:29.239Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:05:29.257Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:05:36.206Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:05:36.224Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:05:49.952Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:05:49.967Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:05:53.131Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:05:53.148Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value ":_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/:_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:06:01.762Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:06:42.200Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:09.184Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:14:40.310Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:14:40.328Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:43.047Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:14:56.448Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:15:12.941Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:15:12.961Z"}
+error: 
+    status - 500 
+    message - ReferenceError: isTrash is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\services\/Note.service.js:18:15)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:15:18.634Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:17:07.779Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:17:07.804Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:17:34.960Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:17:34.980Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:18:02.563Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:18:02.587Z"}
+error: 
+    status - 500 
+    message - ReferenceError: HttpStatus is not defined
+    at _callee2$ (D:\BL_Backend\fundo-project\src\controllers\/note.controller.js:19:16)
+    at tryCatch (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:17)
+    at _next (D:\BL_Backend\fundo-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:18:27.875Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:19:14.983Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:19:15.001Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:21:27.808Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:21:27.835Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:32.283Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:37.978Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:21:53.716Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:21:53.747Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:21:58.633Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:22:10.762Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:22:10.801Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:23:08.835Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:23:08.864Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:23:18.370Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:23:18.394Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:23:40.143Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:23:40.180Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:23:45.978Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:23:46.009Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:24:09.210Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:24:09.240Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\BL_Backend\fundo-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/_id 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-02-12T03:24:20.518Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:25:36.804Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:25:36.826Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:26:31.135Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:26:31.166Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:29:34.596Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:30:33.394Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:30:33.423Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:30:44.021Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:34:58.883Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:34:58.914Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:35:01.785Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:35:01.811Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:35:02.500Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:37:49.955Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:39:15.142Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:39:15.172Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:39:16.036Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:45:55.019Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:45:55.034Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:45:59.356Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:47:18.291Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:47:18.312Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:47:19.815Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:47:19.830Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T03:47:22.845Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T03:47:22.860Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-02-12T03:48:35.723Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:19:39.931Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:19:39.946Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:19:46.305Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:19:46.334Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:19:51.329Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:19:51.355Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:19:57.095Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:19:57.121Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:20:03.911Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:20:03.930Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:20:09.588Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:20:09.624Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:23:28.441Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:23:28.461Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:24:40.928Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:24:40.951Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/notes/67ab1e0bc9177107a4fc9452 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2025-02-12T04:26:18.049Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:29:51.841Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:29:51.859Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:30:17.105Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:30:17.122Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:46:33.867Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:46:33.889Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:26.234Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:26.252Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:28.808Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:28.836Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:31.819Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:31.847Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:36.177Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:36.203Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:40.794Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:40.828Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:47:43.205Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:47:43.223Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:48:30.196Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:48:30.210Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:48:38.088Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:48:38.116Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:48:42.003Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:48:42.024Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:50:11.873Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:50:11.890Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:50:21.987Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:50:22.008Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-02-12T04:57:28.950Z"}
+info: Connected to the database. {"timestamp":"2025-02-12T04:57:28.969Z"}

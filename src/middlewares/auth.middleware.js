@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import HttpStatus from 'http-status-codes';
 import jwt from 'jsonwebtoken';
 
@@ -12,9 +13,9 @@ export const userAuth = async (req, res, next) => {
     newToken = newToken.split(' ')[1];
 
     const user = await jwt.verify(newToken, process.env.JWT_SECRET);
-    console.log('=========>>>>>>>>', user);
+    // console.log('=========>>>>>>>>', user);
+    res.user = user;
     req.body.userId = user.userid;
-    // res.user = user;
     // res.token = newToken;
     next();
   } catch (error) {

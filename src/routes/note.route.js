@@ -6,6 +6,7 @@ const router = express.Router();
 
 
 router.post("", userAuth, NoteController.createNote);
+router.put('/:_id', userAuth, NoteController.updateNote);
 
 
 
