@@ -11,5 +11,7 @@ router.post('/', registerValidator, userController.registerUser);
 router.get('/', userAuth, userController.getAllUsers);
 router.post('/login', userController.loginUsers);
 router.post('/forget' , userController.forgetPass);
+router.put('/reset' , userController.resetPass);
+
 
 export default router;

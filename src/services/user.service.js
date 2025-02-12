@@ -53,15 +53,47 @@ export const getUser = async () => {
   }
 };
 
+let resetOTP; 
+
 export const forgetPass = async ({email}) => {
   try{
     const user = await User.findOne({email});
     if(!user){
       return {message: 'not found email'};
     }
+
     const otp = Math.floor(100000 + Math.random() * 900000);
+
+    resetOTP = otp;
+
     return{message:'otp generated' , otp};
   }catch (error) {
     return {error: error.message};
+  }  
+};
+
+export const resetPass = async ({email , otp , newPassword}) => {
+  try{
+  const user = await User.findOne({email});
+    if(!user){
+      return {message: 'not found email'};
+    }
+    console.log(user);
+    if (resetOTP !== parseInt(otp)) {
+      return { message: 'Invalid or expired OTP' };
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // eslint-disable-next-line max-len
+    let data = await User.findOneAndUpdate(
+      {email} , 
+      { password:hashedPassword},
+      {new:true});
+    console.log('--->' , data);
+    return data;
+
+  } catch (error){
+    return {error: error.message};
   }
-}
+};
