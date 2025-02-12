@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable prettier/prettier */
 import User from '../models/user.model';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
@@ -49,3 +52,16 @@ export const getUser = async () => {
     throw new Error(error.message);
   }
 };
+
+export const forgetPass = async ({email}) => {
+  try{
+    const user = await User.findOne({email});
+    if(!user){
+      return {message: 'not found email'};
+    }
+    const otp = Math.floor(100000 + Math.random() * 900000);
+    return{message:'otp generated' , otp};
+  }catch (error) {
+    return {error: error.message};
+  }
+}
