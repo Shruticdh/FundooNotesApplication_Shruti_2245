@@ -30,3 +30,23 @@ export const updateNote = async (_id, body) => {
         return {error: error.message};
     }
 };
+
+export const deleteNote = async (_id) => {
+    try {
+      const note = await Note.findById(_id);
+      if (!note) {
+        return { error: 'Note not found' };
+      }
+  
+      const data = await Note.findByIdAndUpdate(
+        _id,
+        { isTrash: note.isTrash ? false : true },
+        { new: true }
+      );
+  
+      return data;
+    } catch (error) {
+      return { error: error.message };
+    }
+  };
+  
