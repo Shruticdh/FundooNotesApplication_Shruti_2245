@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as NoteService from '../services/Note.service';
 import HttpStatus from 'http-status-codes';
 
