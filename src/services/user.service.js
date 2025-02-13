@@ -91,7 +91,7 @@ export const resetPass = async ({ email, otp, newPassword }) => {
       { new: true }
     );
     resetOTP = null;
-    return data;
+    return {message:'reset sucessfully' , data};
     // if (resetOTP !== null) {
     //   resetOTP = null;
     //   return data;
