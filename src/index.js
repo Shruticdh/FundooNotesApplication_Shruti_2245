@@ -5,6 +5,9 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import swaggerUi from 'swagger-ui-express';
+import fs from 'fs';
+import path from 'path';
 
 import routes from './routes';
 import database from './config/database';
@@ -30,6 +33,11 @@ app.use(morgan('combined', { stream: logStream }));
 
 database();
 
+const swaggerDocument = JSON.parse(
+  fs.readFileSync(path.join('src', 'swagger', 'swagger.json'), 'utf-8')
+);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 app.use(`/api/${api_version}`, routes());
 app.use(appErrorHandler);
 app.use(genericErrorHandler);
@@ -37,6 +45,7 @@ app.use(notFound);
 
 app.listen(port, () => {
   logger.info(`Server started at ${host}:${port}/api/${api_version}/`);
+  console.log(`Swagger Docs available at http://localhost:${port}/api-docs`);
 });
 
 export default app;
